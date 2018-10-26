@@ -13,17 +13,12 @@ public class getOverlap {
 
         if ( d2Start >= d1Start && d2Start <= d1End) {
             // date2 has a part in date1
-            System.out.println("is in rage part 1");
             return new dateRange(new Date(d2Start), new Date(calcSmallOverlap(d1End, d2End)));
-
-
         } else if (d1Start >= d2Start && d1Start <= d2End) {
             // date1 has a part in date2.
-            System.out.println("is in rage part 2");
             return new dateRange(new Date(d1Start), new Date(calcSmallOverlap(d2End, d1End)));
         } else {
             // is not in range.
-            System.out.print("\nfailed because not in range.\n");
             throw new IllegalArgumentException("It was not in range.");
         }
 
