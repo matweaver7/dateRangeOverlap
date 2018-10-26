@@ -24,8 +24,6 @@ public class getOverlap {
 
     }
 
-
-
     private long calcSmallOverlap(long d1End,long d2End) {
         // d2Start is in range d2Start is between d1Start and d1End
         if (d2End <= d1End) {
